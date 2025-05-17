@@ -1,0 +1,138 @@
+# Smart DevOps Dashboard
+
+A full-stack analytics dashboard integrating CI/CD pipeline metrics, infrastructure health data, and AI-based intelligent alerts.
+
+## 🔧 Tech Stack
+
+### Frontend:
+- React.js (Hooks, Context API)
+- RSuite / Material UI
+- Highcharts / Chart.js
+
+### Backend:
+- Node.js + Express.js *(OR Java + Spring Boot)*
+- RESTful APIs
+
+### Database:
+- MongoDB *(or PostgreSQL)*
+
+### DevOps & Cloud:
+- GitHub Actions / Jenkins (API Integration)
+- AWS CloudWatch (Mock or Real)
+- Docker + Docker Compose
+- Deployment via AWS EC2 / Azure App Service
+
+### Optional AI Layer:
+- Python (Flask/FastAPI) microservice for ML
+- OpenAI API or custom anomaly detection model
+
+---
+
+## 📊 Features
+
+### 1. CI/CD Metrics Dashboard
+- Pull build data from GitHub Actions or Jenkins
+- Visualize build success rate, avg duration, test coverage
+
+### 2. Infrastructure Monitoring
+- Real-time CPU, memory, disk, and network data via CloudWatch API
+- Historical trends and thresholds
+
+### 3. Smart AI Alerts
+- Use ML or OpenAI API to:
+  - Detect outlier builds
+  - Predict failures
+  - Summarize log data
+
+### 4. Role-Based Access
+- Admin: View full dashboard, alerts, logs
+- Developer: View builds, receive alerts
+
+### 5. Notifications
+- Slack/Webhook alerts for failures or spikes
+
+### 6. Audit Logs
+- Track all user actions and API calls
+
+---
+
+## 🧱 Project Structure
+
+```
+smart-devops-dashboard/
+├── client/               # React frontend
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── hooks/
+│   │   └── App.jsx
+│   └── package.json
+├── server/               # Express backend
+│   ├── routes/
+│   ├── controllers/
+│   ├── models/
+│   ├── utils/
+│   └── index.js
+├── ml-service/           # (Optional) Python microservice
+│   └── app.py
+├── .env
+├── Dockerfile
+├── docker-compose.yml
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repo
+```bash
+git clone https://github.com/yourusername/smart-devops-dashboard.git
+cd smart-devops-dashboard
+```
+
+### Setup Backend
+```bash
+cd server
+npm install
+npm run dev
+```
+
+### Setup Frontend
+```bash
+cd client
+npm install
+npm start
+```
+
+### Run (Optional) ML Service
+```bash
+cd ml-service
+pip install -r requirements.txt
+python app.py
+```
+
+### Docker Compose (Full Stack)
+```bash
+docker-compose up --build
+```
+
+---
+
+## 📌 Future Enhancements
+- Integration with Azure DevOps
+- Support for Kubernetes metrics
+- Real-time websocket updates
+- SSO / OAuth2 login
+
+---
+
+## 🙌 Author
+Dhanush Bekal  
+[LinkedIn](https://linkedin.com/in/dhanush-bekal-253353b2)  
+Full Stack Engineer | MERN | Java | Spring Boot | AI
+
+---
+
+## 📄 License
+MIT License
